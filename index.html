@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Currency Converter</title>
-    <link href="style.css" rel="stylesheet" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,36 +15,46 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <div class="container">
       <h2>Currency Converter</h2>
       <form>
         <div class="amount">
-          <p>Enter Amount</p>
+          <p>Amount</p>
           <input value="1" type="text" />
         </div>
         <div class="dropdown">
           <div class="from">
             <p>From</p>
             <div class="select-container">
-              <img src="https://flagsapi.com/US/flat/64.png" />
+              <img
+                title="United States"
+                src="https://flagsapi.com/US/flat/64.png"
+              />
               <select name="from"></select>
             </div>
           </div>
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          
+          <i
+            id="reverseCurrency"
+            class="fa-solid fa-arrow-right-arrow-left"
+          ></i>
+
           <div class="to">
             <p>To</p>
             <div class="select-container">
-              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <img title="India" src="https://flagsapi.com/IN/flat/64.png" />
               <select name="to"></select>
             </div>
           </div>
         </div>
-        <div class="msg">1USD = 80INR</div>
-        <button>Get Exchange Rate</button>
+        <blockquote class="msg"></blockquote>
+        <button>GET EXCHANGE RATE</button>
       </form>
     </div>
-    <script src="codes.js"></script>
-    <script src="app.js"></script>
+    <script src="codes.js" async defer></script>
+    <script src="countryname.js" async defer></script>
+    <script src="app.js" async defer></script>
   </body>
 </html>
