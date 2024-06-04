@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 
+  
 }
 
 body {
@@ -16,16 +17,18 @@ body {
 }
 
 h2{
+  
   text-align: center;
+
 }
 
 .container {
+
   background-color: silver;
   padding: 2rem;
   border-radius: 1rem;
   min-height: 45vh;
   min-width: 40vh;
-  
 }
 
 form {
@@ -80,6 +83,7 @@ form input {
 }
 
 .msg {
+
   margin: 2rem 0 2rem 0;
   font-size: 1.2rem;
   text-align: center;
@@ -91,6 +95,7 @@ form button {
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
+
 }
 
 .loader {
@@ -101,7 +106,7 @@ form button {
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  animation: spin 15s linear infinite;
+  animation: spin 25s linear infinite;
 }
 
 @keyframes spin {

@@ -1,7 +1,6 @@
 dropdowns = document.querySelectorAll(".dropdown select");
 messageDetail = document.querySelector(".msg");
 clickButton = document.querySelector("form button");
-
 BASE_URL =
   "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/";
 fromURL = document.querySelector(".from select");
@@ -56,8 +55,8 @@ const fetchDataRespone = async () => {
   let amt = document.querySelector(".amount input");
   let amtVul = amt.value;
 
-  if (amtVal === "" || amtVal < 1) {
-    amtVal = 1;
+  if (amtVul === "" || amtVul < 1) {
+    amtVul = 1;
     amt.value = "1";
   }
 
