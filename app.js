@@ -54,10 +54,10 @@ clickButton.addEventListener("click", async (evt) => {
 const fetchDataRespone = async () => {
   messageDetail.innerHTML = `<div class="loader"></div>`;
   let amt = document.querySelector(".amount input");
-  let amtVal = amt.value;
+  let amtVul = amt.value;
 
-  if (amtVal === "" || amtVal < 1) {
-    amtVal = 1;
+  if (amtVul === "" || amtVul < 1) {
+    amtVul = 1;
     amt.value = "1";
   }
 
